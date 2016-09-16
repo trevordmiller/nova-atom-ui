@@ -56,6 +56,26 @@
   color: @nova_purpose_user_action_needed;
 }
 
+// LINKS
+
+a,
+.link,
+.settings-view .link {
+  color: @nova_purpose_emphasis;
+  &:hover,
+  &:active,
+  &:focus {
+    color: @nova_purpose_emphasis;
+  }
+}
+
+// HEADINGS
+
+.section-heading,
+.sub-section-heading {
+  color: @nova_normal_white !important;
+}
+
 // BUTTONS
 .btn {
   &:hover,
@@ -82,6 +102,14 @@
   &.badge-error {
     color: @nova_normal_black !important;
   }
+}
+
+// TEXT HIGHLIGHTS
+.highlight-info,
+.highlight-success,
+.highlight-warning,
+.highlight-error {
+  color: @nova_normal_black;
 }
 
 // PANELS
