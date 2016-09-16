@@ -1,18 +1,57 @@
 @import "colors";
+@import "syntax-variables";
 
 
 // ==================================================================
 // OVERRIDES
 // ==================================================================
 
+// GIT STATUS
+.status-added    {
+  color: @syntax-color-added;
+}
+.status-modified {
+  color: @syntax-color-modified;
+}
+.status-removed  {
+  color: @syntax-color-removed;
+}
+.status-renamed  {
+  color: @syntax-color-renamed;
+}
+
+// TABS
 .tab-bar {
   border-bottom: 1px solid @tab-bar-border-color;
-
   .tab {
     color: @base-background-color;
+    border-right: 0;
+    &.modified {
+      color: @nova_purpose_user_action_needed;
+    }
+    .close-icon {
+      border-color: @nova_purpose_user_action_needed !important;
+    }
   }
 }
 
+// TREE VIEW
+.file,
+.directory {
+  .status-added,
+  .status-modified {
+    padding-left: 15px !important;
+    color: inherit;
+  }
+  .status-added {
+    border-left: 2px solid @syntax-color-added;
+  }
+  .status-modified {
+    border-left: 2px solid @syntax-color-modified;
+  }
+}
+
+// STATUS BAR
 .package-updates-status-view.text-info {
   color: @nova_purpose_user_action_needed;
 }
