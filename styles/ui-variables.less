@@ -2,72 +2,67 @@
 
 
 // ==================================================================
-// REQUIRED SIZES
+// FALLBACK VARIABLES
 // ==================================================================
 
-@font-size: 12px;
+// COLORS
+@app-background-color: @nova_normal_black;
+@base-background-color: @nova_normal_black;
+@base-border-color: @nova_decoration_medium;
+@tab-bar-background-color: @nova_decoration_medium;
+@tab-bar-border-color: @nova_normal_black;
+@tab-background-color: @nova_decoration_medium;
+@tab-background-color-active: @nova_normal_black;
+@tab-border-color: @nova_normal_black;
+@tree-view-background-color: @nova_normal_black;
+@tree-view-border-color: @nova_decoration_medium;
+@text-color: @nova_purpose_trivial;
+@text-color-subtle: @nova_decoration_light;
+@text-color-highlight: @nova_purpose_user_current_state;
+@text-color-selected: @text-color-highlight;
+@text-color-info: @nova_purpose_user_current_state;
+@text-color-success: @nova_purpose_user_current_state;
+@text-color-warning: @nova_purpose_user_action_needed;
+@text-color-error: @nova_purpose_user_action_needed;
+@background-color-info: @text-color-info;
+@background-color-success: @text-color-success;
+@background-color-warning: @text-color-warning;
+@background-color-error: @text-color-error;
+@background-color-highlight: hsla(0,0%,0%,.1);
+@background-color-selected: @background-color-highlight;
+@pane-item-background-color: @base-background-color;
+@pane-item-border-color: @base-border-color;
+@input-background-color: @nova_decoration_medium;
+@input-border-color: @nova_decoration_light;
+@tool-panel-background-color: @input-background-color;
+@tool-panel-border-color: @input-border-color;
+@inset-panel-background-color: @input-background-color;
+@inset-panel-border-color: @input-border-color;
+@panel-heading-background-color: @input-background-color;
+@panel-heading-border-color: @input-border-color;
+@overlay-background-color: @input-background-color;
+@overlay-border-color: @input-border-color;
+@button-background-color: @input-background-color;
+@button-background-color-hover: @nova_purpose_user_current_state;
+@button-background-color-selected: @nova_purpose_user_current_state;
+@button-border-color: @input-border-color;
+@ui-site-color-1: @nova_normal_green;
+@ui-site-color-2: @nova_normal_blue;
+@ui-site-color-3: @nova_bright_red;
+@ui-site-color-4: @nova_normal_magenta;
+@ui-site-color-5: @nova_normal_yellow;
+
+// SIZES
+@font-size: 13px;
 @input-font-size: 14px;
 @disclosure-arrow-size: 12px;
 @component-padding: 10px;
 @component-icon-padding: 5px;
 @component-icon-size: 16px;
 @component-line-height: 25px;
-@tab-height: 30px;
 @component-border-radius: 2px;
-@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@tab-height: 30px;
 
-
-// ==================================================================
-// HIGHLIGHT GROUPS BY PURPOSE
-// ==================================================================
-
-// DECORATION
-@base-background-color: @nova_normal_black;
-@tab-bar-background-color: @base-background-color;
-@tab-background-color: @tab-bar-background-color;
-@app-background-color: @nova_normal_black;
-@base-border-color: @nova_decoration_medium;
-@tab-border-color: @base-border-color;
-@tab-bar-border-color: @base-border-color;
-@tab-background-color-active: @nova_decoration_medium;
-@background-color-highlight: @nova_decoration_medium;
-@background-color-selected: @nova_decoration_medium;
-@text-color: @nova_bright_black;
-@text-color-subtle: @nova_decoration_light;
-@text-color-highlight: @nova_bright_black;
-@text-color-info: @nova_normal_blue;
-@background-color-info: @nova_normal_blue;
-@text-color-success: @nova_normal_green;
-@background-color-success: @nova_normal_green;
-@ui-site-color-1: @nova_normal_blue;
-@ui-site-color-2: @nova_normal_green;
-@ui-site-color-3: @nova_bright_red;
-@ui-site-color-4: @nova_bright_magenta;
-@ui-site-color-5: @nova_normal_yellow;
-@button-background-color: @nova_decoration_medium;
-@button-background-color-hover: @nova_decoration_light;
-@button-background-color-selected: @nova_decoration_medium;
-@pane-item-background-color: @base-background-color;
-@pane-item-border-color: @base-border-color;
-@input-background-color: @app-background-color;
-@input-border-color: @base-border-color;
-@tool-panel-background-color: @base-background-color;
-@tool-panel-border-color: @base-border-color;
-@inset-panel-background-color: lighten(@base-background-color, 4%);
-@inset-panel-border-color: @base-border-color;
-@panel-heading-background-color: lighten(@base-background-color, 4%);
-@panel-heading-border-color: @base-border-color;
-@overlay-background-color: lighten(@base-background-color, 5%);
-@overlay-border-color: @base-border-color;
-@button-border-color: @base-border-color;
-@tree-view-background-color: @base-background-color;
-@tree-view-border-color: @base-border-color;
-
-// USER ACTION NEEDED
-@text-color-warning: @nova_purpose_user_action_needed;
-@background-color-warning: @nova_purpose_user_action_needed;
-@text-color-error: @nova_purpose_user_action_needed;
-@background-color-error: @nova_purpose_user_action_needed;
-
-// USER CURRENT STATE
-@text-color-selected: @nova_purpose_user_current_state;
+// CONFIG
+@font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@use-custom-controls: true;

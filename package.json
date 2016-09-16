@@ -2,7 +2,7 @@
   "name": "nova-atom-ui",
   "version": "1.0.0",
   "scripts": {
-    "dev": "apm link --dev && atom --dev ."
+    "start": "apm link --dev && atom --dev ."
   },
   "description": "Nova color scheme UI plugin for Atom",
   "homepage": "https://trevordmiller.github.io/nova-docs",
