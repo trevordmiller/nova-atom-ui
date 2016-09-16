@@ -55,3 +55,31 @@
 .package-updates-status-view.text-info {
   color: @nova_purpose_user_action_needed;
 }
+
+// BUTTONS
+.btn {
+  &:hover,
+  &:focus,
+  &:active {
+    color: @nova_normal_black;
+    background-color: @nova_purpose_user_current_state;
+  }
+  &.selected,
+  &.btn-primary,
+  &.btn-info,
+  &.btn-success,
+  &.btn-warning,
+  &.btn-error {
+    color: @nova_normal_black !important;
+  }
+}
+
+// BADGES
+.badge {
+  &.badge-info,
+  &.badge-success,
+  &.badge-warning,
+  &.badge-error {
+    color: @nova_normal_black !important;
+  }
+}
