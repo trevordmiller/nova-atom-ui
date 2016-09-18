@@ -1,0 +1,117 @@
+@import "colors";
+@import "syntax-variables";
+
+
+// ==================================================================
+// OVERRIDES
+// ==================================================================
+
+// GIT STATUS
+.status-added    {
+  color: @syntax-color-added;
+}
+.status-modified {
+  color: @syntax-color-modified;
+}
+.status-removed  {
+  color: @syntax-color-removed;
+}
+.status-renamed  {
+  color: @syntax-color-renamed;
+}
+
+// TABS
+.tab-bar {
+  border-bottom: 1px solid @tab-bar-border-color;
+  .tab {
+    color: @base-background-color;
+    border-right: 0;
+    &.modified {
+      color: @nova_purpose_user_action_needed;
+    }
+    .close-icon {
+      border-color: @nova_purpose_user_action_needed !important;
+    }
+  }
+}
+
+// TREE VIEW
+.file,
+.directory {
+  .status-added,
+  .status-modified {
+    padding-left: 15px !important;
+    color: inherit;
+  }
+  .status-added {
+    border-left: 2px solid @syntax-color-added;
+  }
+  .status-modified {
+    border-left: 2px solid @syntax-color-modified;
+  }
+}
+
+// STATUS BAR
+.package-updates-status-view.text-info {
+  color: @nova_purpose_user_action_needed;
+}
+
+// LINKS
+
+.settings-view .package-card a.package-name,
+.settings-view .link {
+  color: @nova_purpose_emphasis;
+  &:hover,
+  &:active,
+  &:focus {
+    color: @nova_purpose_emphasis;
+  }
+}
+
+// HEADINGS
+
+.section-heading,
+.sub-section-heading {
+  color: @nova_normal_white !important;
+}
+
+// BUTTONS
+.btn {
+  &:hover,
+  &:focus,
+  &:active {
+    color: @nova_normal_black;
+    background-color: @nova_purpose_user_current_state;
+  }
+  &.selected,
+  &.btn-primary,
+  &.btn-info,
+  &.btn-success,
+  &.btn-warning,
+  &.btn-error {
+    color: @nova_normal_black !important;
+  }
+}
+
+// BADGES
+.badge {
+  &.badge-info,
+  &.badge-success,
+  &.badge-warning,
+  &.badge-error {
+    color: @nova_normal_black !important;
+  }
+}
+
+// TEXT HIGHLIGHTS
+.highlight-info,
+.highlight-success,
+.highlight-warning,
+.highlight-error {
+  color: @nova_normal_black;
+}
+
+// PANELS
+.package-card {
+  background: @nova_normal_black !important;
+}
