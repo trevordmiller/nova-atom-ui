@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "scripts/start",
-    "push": "scripts/publish"
+    "publish": "scripts/publish"
   },
   "description": "Nova color scheme UI plugin for Atom",
   "homepage": "https://trevordmiller.github.io/nova-docs",
