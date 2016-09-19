@@ -115,3 +115,23 @@
 .package-card {
   background: @nova_normal_black !important;
 }
+
+// SCROLLBARS
+.scrollbars-visible-always {
+  /deep/ ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  /deep/ ::-webkit-scrollbar-track,
+  /deep/ ::-webkit-scrollbar-corner {
+    background: @nova_decoration_light;
+  }
+
+  /deep/ ::-webkit-scrollbar-thumb,
+  /deep/ ::-webkit-scrollbar-thumb:hover {
+    background: @nova_purpose_user_current_state;
+    border-radius: 5px;
+    box-shadow: 0;
+  }
+}
