@@ -111,6 +111,15 @@
   color: @nova_normal_black;
 }
 
+atom-text-editor[mini] {
+  &::shadow {
+    .selection .region {
+      background-color: @nova_decoration_dark;
+      margin-top: 2px;
+    }
+  }
+}
+
 // PANELS
 .package-card {
   background: @nova_normal_black !important;
