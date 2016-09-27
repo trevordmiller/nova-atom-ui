@@ -41,7 +41,9 @@
   .status-added,
   .status-modified {
     padding-left: 15px !important;
-    color: inherit;
+    &:not(.selected) {
+      color: inherit;
+    }
   }
   .status-added {
     border-left: 2px solid @syntax-color-added;
