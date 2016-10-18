@@ -150,6 +150,9 @@
   &:hover,
   &:focus,
   &:active {
+    > .text-success {
+        color: @nova_normal_black;
+    }
     color: @nova_normal_black;
     background-color: @nova_purpose_user_current_state;
   }
@@ -159,6 +162,9 @@
   &.btn-success,
   &.btn-warning,
   &.btn-error {
+    > .text-success {
+      color: @nova_normal_black;
+    }
     color: @nova_normal_black !important;
   }
 }
