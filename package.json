@@ -1,9 +1,8 @@
 {
   "name": "nova-atom-ui",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "scripts": {
-    "start": "scripts/start",
-    "publish": "scripts/publish"
+    "start": "scripts/start"
   },
   "description": "Nova color scheme UI plugin for Atom",
   "homepage": "https://trevordmiller.github.io/nova",
