@@ -1,0 +1,12 @@
+#!/bin/bash
+set -euo pipefail
+
+release_type=$1
+
+script-log state "Pulling latest"
+git pull
+
+script-log state "Running apm publish"
+apm publish "$release_type"
+
+script-log state "Done"
